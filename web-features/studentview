@@ -34,3 +34,55 @@ if (empty($_SESSION['logged_in'])) {
 
 </head>
 
+<body>
+    <main>
+        <?php
+        $id = $_GET['id'];
+
+        $query = "SELECT * FROM student WHERE id = '$id'";
+        $result = mysqli_query($db, $query);
+
+        $row = mysqli_fetch_assoc($result);
+        ?>
+
+        <a href="javascript:history.back()" class="back-btn">Back</a>
+        <a href="studentEdit.php?id=<?php echo $id ?>" class="add-btn">Edit Info</a>
+
+        <div class="row">
+            <div class="col-img">
+                <div class="img-container">
+                    <img src="images/<?php echo $row['studentImg'] ?>" class="student-img">
+                </div>
+            </div>
+
+            <div class="col-center">
+                <label for="">Name</label>
+                <input type="text" name="firstName" placeholder="First Name" value="<?php echo $row['firstName'] ?>" readonly>
+
+                <input type="text" name="lastName" value="<?php echo $row['lastName'] ?>" readonly>
+
+                <label for="course">Course</label>
+                <input type="text" name="course" value="<?php echo $row['course'] ?>" readonly>
+
+
+                <label for="college">College</label>
+                <input type="text" name="college" id="college-input" value="<?php echo $row['college'] ?>" readonly>
+
+            </div>
+
+            <div class="col-right">
+                <label for="year">Year</label>
+                <input type="text" name="year" value="<?php echo $row['year'] ?>" readonly>
+
+
+                <label for="gender">Gender</label>
+
+                <input type="text" name="gender" value="<?php echo $row['gender'] ?>" readonly>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    
