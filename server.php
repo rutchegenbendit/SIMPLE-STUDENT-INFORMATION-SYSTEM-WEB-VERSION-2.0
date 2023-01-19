@@ -43,6 +43,17 @@ if (isset($_POST['addStudent'])) {
     $yearId = date("Y");
     $displayId = $yearId . '-' . rand(1000, 9999);
 
+    $queryLastRow = "SELECT id FROM student ORDER BY id DESC LIMIT 1";
+    $result = mysqli_query($db, $queryLastRow);
+
+    $row = mysqli_fetch_assoc($result);
+    $id = $row['id'];
+
+    $currentId = $id + 1;
+    $yearId = date("Y");
+
+    $displayId = $yearId . '-' . $currentId;
+
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $course = $_POST['course'];
@@ -62,6 +73,7 @@ if (isset($_POST['addStudent'])) {
 }
 
 //student - edit
+//student - create
 if (isset($_POST['editStudent'])) {
     $id = $_POST['id'];
 
