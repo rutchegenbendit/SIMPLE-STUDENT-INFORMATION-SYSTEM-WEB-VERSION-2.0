@@ -85,4 +85,17 @@ if (empty($_SESSION['logged_in'])) {
         </div>
     </main>
 
-    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $('#file-attach').bind('change', function() {
+            var fileName = '';
+            fileName = $(this).val();
+            $('#attached-file-selected').html(fileName);
+        });
+    </script>
+
+</body>
+
+</html>
