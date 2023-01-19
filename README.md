@@ -1,5 +1,7 @@
 # SIS WEB VERSION 2.0
-Web version of Simple Student Information System Tables:
+This is an updated Web version of Simple Student Information System 
+
+Tables:
 
 student
 
@@ -34,3 +36,7 @@ CRUDL for student, course, college
 use MySQL
 
 Search by fields
+
+Updates:
+Login
+Upload Photo
