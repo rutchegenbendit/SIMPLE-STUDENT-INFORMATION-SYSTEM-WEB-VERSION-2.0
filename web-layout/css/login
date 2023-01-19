@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0A0F26;
+    --off-color: #D9D8D7;
+    --fade-color: rgba(223, 223, 223, 0.08);
+
+    --base-color: #F2F2F0;
+
+    --secondary-color: #D99F7E;
+    --accent-color: #BF8C6F;
+}
+
+/* headlines and texts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+h1,
+h2,
+h3,
+a,
+p,
+span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+main h1 {
+    color: var(--cancan);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* body */
+body {
+    /* background-color: var(--base-color); */
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav */
+
+/* main  */
+main {
+    background-color: var(--base-color);
+    padding: 2rem;
+}
+
+/* input lines */
+.wrapper-input {
+    position: relative;
+}
+
+.wrapper-input input {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--primary-color);
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    margin-block: 5px;
+    position: relative;
+    text-align: left;
+}
+
+.wrapper-input .icon {
+    position: absolute;
+    scale: .8;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adadad;
+}
+
+/* buttons */
+.btn-login {
+    background-color: var(--secondary-color);
+    color: var(--base-color);
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border: none;
+    transition: 300ms;
+}
+
+.btn-login:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
