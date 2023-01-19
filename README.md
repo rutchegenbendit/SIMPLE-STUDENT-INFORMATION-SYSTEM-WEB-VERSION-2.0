@@ -1,5 +1,5 @@
 # SIS WEB VERSION 2.0
- l Web version of Simple Student Information System Tables:
+Web version of Simple Student Information System Tables:
 
 student
 
