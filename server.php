@@ -40,6 +40,9 @@ if (isset($_GET['logout'])) {
 //student - create
 if (isset($_POST['addStudent'])) {
 
+    $yearId = date("Y");
+    $displayId = $yearId . '-' . rand(1000, 9999);
+
     $queryLastRow = "SELECT id FROM student ORDER BY id DESC LIMIT 1";
     $result = mysqli_query($db, $queryLastRow);
 
@@ -69,6 +72,7 @@ if (isset($_POST['addStudent'])) {
     echo "<script>alert('Student Added'); location.href='index.php'</script>";
 }
 
+//student - edit
 //student - create
 if (isset($_POST['editStudent'])) {
     $id = $_POST['id'];
@@ -100,3 +104,4 @@ if (isset($_POST['editStudent'])) {
 
     echo "<script>alert('Student Updated'); location.href='index.php'</script>";
 }
+
