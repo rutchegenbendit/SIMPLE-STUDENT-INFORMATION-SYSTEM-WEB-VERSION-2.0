@@ -1,0 +1,374 @@
+@import 
+url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+    background-image: url('../images/Bglogo.png');
+    background-repeat: no-repeat;
+    background-size:300px;
+    background-color:rebeccapurple;
+}
+
+.logout-btn{
+    width: 106px;
+    height: 44px;
+    
+}
+
+#main-content{
+    background-color: #fff;
+    border-radius: 30px; 
+    box-shadow: 0px 4px 4px grey;
+    height: 600px;
+    padding-left: 50px;
+}
+.container{
+    max-width: 1000px;
+}
+.nav-item:hover{
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: hotpink;
+}
+
+#activeLink{
+    color:black;
+    font-weight: 500;
+}
+#activeLink:hover{
+    color: white;
+}
+
+.active{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 30px;
+    border: 1px solid palevioletred;
+}
+.active:hover{
+    background-color: palevioletred;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 30px;
+    border: 1px solid palevioletred;
+}
+
+.table{
+    background: #fff;
+    
+}
+th{
+    position: sticky;
+    top: 25%;
+}
+caption{
+    background-color: white;
+    position: sticky;
+    padding-top: 0%;
+    top: 0;
+}
+.caption-upper, .caption-lower{
+    justify-content: center;
+}
+#table-photo{
+    border-radius: 50px;
+}
+
+#addNew{
+    border: 0px;
+    background-color: transparent;
+}
+#addNew:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 30px;
+}
+#addICON{
+    height: 53px;
+    width: 52px;
+}
+#addcollegeICON{
+    height: 50px;
+    width: 54px;
+}
+.logout{
+    position: relative;
+    width: 80px;
+    height: 25px;
+    background-color: #3305b1;
+    border-radius: 45px;
+    transition: 0.5s;
+}
+.logout-text{
+    color: white;
+    font-weight: 500px;
+    font-style: italic;
+}
+#field{
+    width: 150px;
+    max-width: 100%;
+    height: 10%;
+}
+.searchfield{
+    width: 600px;
+    max-width: 100%;
+    height: 10%;
+    border: 2px solid palevioletred;
+    border-radius: 30px;
+}
+
+.btn-search{
+    border: transparent;
+    background-color: transparent;
+}
+
+.btn-warning{
+    color: black;
+    background-color: palevioletred;
+    border-color: palevioletred;
+}
+
+.btn-warning:hover{
+    color: white;
+    background-color: rgb(83, 10, 35);
+    border-color: rgb(83, 10, 35);
+}
+
+.btn-danger{
+    color: white;
+    background-color: #3305b1;
+    border-color: #3305b1;
+}
+
+.btn-danger:hover{
+    color: black;
+    background-color: #8a64f3;
+    border-color: #8a64f3;
+}
+
+.search{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: #3305b1;
+    border-radius: 45px;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+}
+.search:active{
+    box-shadow: 12px 12px 4px white ;
+}
+
+.search .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #3305b1;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.search .icon:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: translate(-4px, -4px) rotate(315deg);
+}
+
+.search .icon:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: white;
+    transform: translate(7px, 7px) rotate(315deg);
+}
+
+footer{
+    background-color: #211C1C;
+    color: white;
+}
+
+#footer1 {
+    font-size: 12px;
+    margin: 10px;
+}
+
+
+/*Image file style*/
+.image-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    border-radius: 30px 30px 0px 0px;
+    position:sticky;
+    padding-top: 0%;
+    top: 0;
+}
+
+.image-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background: white;
+    border: none;
+    overflow: hidden;
+}
+
+.image-wrapper .image{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#custom-btn{
+    letter-spacing: 0.1em;
+    color: white;
+    font-weight: 200;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    width: 100%;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #666262;
+}
+
+/*College Department*/
+.modal-header{
+    display: flex;
+    justify-content: center;
+}
+.college-logo{
+    display: flex;
+}
+.logo{
+    display: flex;
+    width: 100px; 
+    height: 100px;
+}
+
+
+.student-details-image-container{
+    width: 140px; 
+    height: 140px; 
+    border-radius: 140px; 
+    display: flex;
+    overflow: hidden;
+}
+
+.student-table-image, .student-details-image{
+    flex: 1; 
+    justify-content: center; 
+    object-fit: cover; 
+    background-position: center;
+}
+
+.student-table-image-container{
+    width: 50px;
+    height: 50px; 
+    border-radius: 50px; 
+    display: flex; 
+    border: 1px solid #df097e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+.student-detailed-view{
+    background-color: #4E4E50;
+}
+
+#more-about{
+    color: white;
+}
+
+.basic-info{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.basic-info #name {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 3px;
+}
+
+.basic-info #IDno {
+    color: #666262;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 3px;
+}
+
+.college{
+    width: fit-content;
+    height: 10%;
+    left: 611px;
+    top: 776px;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    background: #666262;
+    border-radius: 20px;
+}
+
+.college p{
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    letter-spacing: 100%;
+
+    color: #FFFFFF;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.contact i{
+    color: white;
+}
+.contact p{
+    color: white;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 2%;
+    margin-top: 3%;
+    text-align: center;
+}
+
