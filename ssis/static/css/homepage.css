@@ -95,7 +95,7 @@ caption{
     position: relative;
     width: 80px;
     height: 25px;
-    background-color: #3305b1;
+    background-color: palevioletred;
     border-radius: 45px;
     transition: 0.5s;
 }
