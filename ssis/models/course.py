@@ -20,7 +20,7 @@ class Course():
             SELECT course.code, course.name, course.college, college.name
             FROM course
             JOIN college
-            ON course.college = college.code
+            ON course.college = college.name
             LIMIT {item_per_page} OFFSET {offset}
         '''
         cursor.execute(query)
@@ -94,7 +94,7 @@ class Course():
     @staticmethod
     def get_coursecodes() -> list:
         query = '''
-            SELECT code
+            SELECT name
             FROM course
         '''
         cursor.execute(query)
@@ -160,10 +160,10 @@ class Course():
     @staticmethod
     def get_collegecode(course_name: str = None) -> str:
         query = f'''
-            SELECT course.name, college.code
+            SELECT course.name, college.name
             FROM course
             JOIN college
-            ON course.college = college.code
+            ON course.college = college.name
             WHERE course.name = '{course_name}'
             LIMIT 1
         '''
